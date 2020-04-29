@@ -54,7 +54,7 @@
           <li class="active"><a href="#header"><b>HOME</b></a></li>
           <li><a href="#about"><b>FUTURE-ORIENTED JUNK</b></a></li>
           <li><a href="#events"><b>EVENTS</b></a></li>
-          <li><a href="#tribe"><b>TRIPO TRIBE</b></a></li>
+          <li><a href="#tripo"><b>TRIPO TRIBE</b></a></li>
           <li><a href="#contact"><b>CONTACT</b></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -130,36 +130,31 @@
 
     <!-- ======= Features Section ======= -->
     <section id="events" class="features">
-      <div class="container">
-        <div class="grid-event">
-          <div class="item-event2">
-            <a href="#" data-aos="fade-up"><img src="assets/img/Close.png" width="120px" style="margin-top: 50px; margin-right: 120px;"></a>
-          </div>
-          <div class="item-event3">
-            <span class="blink_me"><img  src="assets/img/past.png" width="250px" style="margin-top:60px; margin-right: 50px;"></span>
-            <span class="blink_me1"><img  src="assets/img/present.png" width="250px" style="margin-top:20px; margin-right: 50px;"></span>
-            <span class="blink_me2"><img  src="assets/img/future.png" width="250px" style="margin-top:20px; margin-right: 50px;"></span>
-          </div>  
-          <div class="item-event4">
-            <img src="assets/img/TRIPO-EVENT.png" width="100%" height="100%"><br>
-          </div>
-          <div class="item-event5" data-aos="fade-up">
-            <div class="section-title">
-              <h1 style="margin-left: 400px; margin-top: 30px;">EVENTS</h1>
+        <div class="container">
+          <div class="row">
+            <div style="z-index: 98;">
+             <img src="assets/img/events.png" width="100%" height="100%">
+            </div><br>
+            <div style="z-index: 1; position: relative; right: 60px; bottom: 400px;">
+               <span class="blink_me"><img  src="assets/img/past.png" width="250px" style="margin-bottom: 20px; margin-top: 70px;"></span><br>
+               <span class="blink_me1"><img  src="assets/img/present.png" width="250px" style="margin-bottom: 20px;"></span><br>
+               <span class="blink_me2"><img  src="assets/img/future.png" width="250px" style="margin-bottom: 50px;"></span><br>
+               <a href="#"><img src="assets/img/Close.png" width="120px" style=""></a>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- End Features Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="tripo" class="gallery">
       <div class="container">
-        <div class="tribe-container" id="tribe" >
+        <div class="tribe-container">
           <div class="tribe2">
               <img class="round" src="assets/img/round.png">
-              <img src="assets/img/tripotribe.png" width="100%">
+              <div style="position: relative; display: block; z-index: 99;">
+                <img src="assets/img/tripotribe.png" width="100%">
+              </div>
           </div>  
         </div>
       </div>
@@ -186,17 +181,17 @@
                    collaboration, and we are all about it.
                   </p>
                   <label>Name*</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-10 form-group">
                   <label>Email*</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-10 form-group">
                   <label>About Your Project</label>
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
               </div>
@@ -288,7 +283,7 @@
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
 </body>
 
 </html>
