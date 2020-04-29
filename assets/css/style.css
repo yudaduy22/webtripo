@@ -651,7 +651,7 @@ section {
 .section-title h1 {
   margin: 0 0 40px 0;
   font-size: 90px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 40px;
   font-family: "Monument", sans-serif;
   color: black;
@@ -754,7 +754,7 @@ section {
   animation: rotation 8s infinite linear;
   z-index: 1;
   left: 150px;
-  bottom: 0;
+  bottom: 100px;
 }
 
 @keyframes rotation {
