@@ -27,7 +27,7 @@
         var scrolled = 20;
 
         if ($('#header').length) {
-          scrollto -= $('#header').outerHeight()
+          // scrollto -= $('#header').outerHeight()
 
           if (!$('#header').hasClass('header-scrolled')) {
             scrollto += scrolled;
@@ -37,7 +37,8 @@
         if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
-
+        console.log(scrollto);
+        
         $('html, body').animate({
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');

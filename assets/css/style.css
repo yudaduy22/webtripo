@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgb(255, 220, 22);
+  /* background: rgb(255, 220, 22); */
   height: 65px;
 
 }
@@ -401,7 +401,6 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover;
   position: relative;
-  padding: 120px 0 0 0;
 }
 
 #hero:before {
@@ -448,6 +447,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #17b57d;
+}
+
+#hero .container{
+  margin-top: 10vh;
 }
 
 
@@ -616,7 +619,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 35px 0;
+  padding: 10vh 0;
   overflow: hidden;
   height: 100vh;
 }
@@ -632,6 +635,7 @@ section {
     'footer footer footer footer footer';
   grid-gap: 1px;
   padding: 10px;
+  height: 100vh;
 }
 
 .grid-container > div {
@@ -1106,4 +1110,8 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.nav-menu a:hover, .nav-menu .active > a.yellow{
+  background-color: #ffd939;
 }
