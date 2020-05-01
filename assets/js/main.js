@@ -37,7 +37,6 @@
         if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
-        console.log(scrollto);
         
         $('html, body').animate({
           scrollTop: scrollto

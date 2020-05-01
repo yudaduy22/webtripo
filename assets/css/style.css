@@ -711,8 +711,8 @@ section {
   position: relative;
 }
 
-.item-event3 { grid-area: main; }
-.item-event4 { grid-area: footer; }
+.item-event3 { grid-area: right; }
+.item-event4 { grid-area: main; }
 
 .event-container {
   display: grid;
