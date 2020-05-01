@@ -169,6 +169,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
   float: left;
+  margin: 0 1em;
+}
+
+@font-face {
+  font-family: MonumentExtended;
+  src: url("../font/MonumentExtended-Regular.otf");
 }
 
 .nav-menu a {
@@ -179,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "MonumentExtended", sans-serif;
 }
 
 .nav-menu > ul > li > a:before {
@@ -657,7 +663,7 @@ section {
   font-size: 90px;
   font-weight: bold;
   line-height: 40px;
-  font-family: "Monument", sans-serif;
+  font-family: "MonumentExtended", sans-serif;
   color: black;
   padding: 0;
   letter-spacing: 2px;
@@ -1112,6 +1118,10 @@ section {
   }
 }
 
-.nav-menu a:hover, .nav-menu .active > a.yellow{
+.nav-menu .active > a.yellow{
   background-color: #ffd939;
+}
+
+.nav-menu .active > a.none{
+  background-color:transparent;
 }
