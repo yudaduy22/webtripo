@@ -74,7 +74,9 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="400">
+          <img src="assets/img/shapes.png" class="img-fluid animated" alt="">
+        </div>
     </div>
   </section>
 
@@ -122,19 +124,6 @@
 
         </div>
       </div>
-        <!-- <div class="container-fluid">
-          <div class="row">
-            <div style="z-index: 98;" class="item-event4 text-right">
-             <img src="assets/img/Events.png" width="80%" height="100%">
-            </div><br>
-            <div style="z-index: 1; position: absolute; left: 60px; top: 120px;" class="item-event3">
-               <div class="blink_me"><img  src="assets/img/past.png" width="" style="margin-bottom: 20px; margin-top: 150px;"></div><br>
-               <div class="blink_me1"><img  src="assets/img/present.png" width="" style="margin-bottom: 20px;"></div><br>
-               <div class="blink_me2"><img  src="assets/img/Future.png" width="" style="margin-bottom: 30px;"></div><br>
-               <a href="#header" class="scrollto"><img src="assets/img/Close.png" width="120px" style=""></a>
-            </div>
-          </div>
-        </div> -->
     </section>
     <!-- End Features Section -->
 
@@ -166,21 +155,18 @@
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
             <form action="sendemail.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
+              <div id="frame">
                 <div class="col-md-10 form-group">
+                  <input type="text" name="nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required  />
                   <label>Name*</label>
-                  <input type="text" name="nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
                 </div>
                 <div class="col-md-10 form-group">
+                  <input type="text" name="email" data-rule="email" data-msg="Please enter a valid email" required  />
                   <label>Email*</label>
-                  <input type="text" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
                 </div>
                 <div class="col-md-10 form-group">
+                  <input type="text" name="message" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required  />
                   <label>About Your Project</label>
-                  <input type="text" name="message" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
                 </div>
               </div>
               <div class="mb-3">
@@ -188,12 +174,12 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <button type="submit" class="border-0 p-3 shadow-sm">
-                <img src="assets/img/send.png">
+              <button type="submit" class="border-0 pb-0 shadow-sm blink_me3">
+                Send
+                <hr style="margin-top: 0; border-color: black;">
               </button>
             </form>
           </div>
-
           <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/Email.png" width="70%" >
           </div>
