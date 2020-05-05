@@ -12,7 +12,7 @@ $mail = new PHPMailer;
 $mail->IsSMTP();
 $mail->SMTPSecure = 'tls';
 $mail->Host = "tripo3000.com"; //hostname masing-masing provider email
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0;
 $mail->Port = 587;
 $mail->SMTPAuth = true;
 $mail->Username = "hello@tripo3000.com"; //user email
@@ -21,6 +21,6 @@ $mail->SetFrom("hello@tripo3000.com"); //set email pengirim
 $mail->Subject = $nama; //subyek email
 $mail->AddAddress("yuda@terralogiq.com"); //tujuan email
 $mail->MsgHTML($message);
-if($mail->Send()) echo "Your message has been sent. Thank you!";
+if($mail->Send()) echo "OK";
 else echo "Failed to sending message";
 ?>
