@@ -17,9 +17,9 @@ $mail->Port = 587;
 $mail->SMTPAuth = true;
 $mail->Username = "hello@tripo3000.com"; //user email
 $mail->Password = "tripo3000"; //password email
-$mail->SetFrom("hello@tripo3000.com"); //set email pengirim
+$mail->SetFrom("info@tripo3000.com"); //set email pengirim
 $mail->Subject = $nama; //subyek email
-$mail->AddAddress("yuda@terralogiq.com"); //tujuan email
+$mail->AddAddress("hello@tripo3000.com"); //tujuan email
 $mail->MsgHTML($message);
 if($mail->Send()) echo "OK";
 else echo "Failed to sending message";

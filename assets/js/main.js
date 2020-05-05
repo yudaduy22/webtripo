@@ -168,6 +168,10 @@
     items: 1
   });
 
+  $(document).ready(function(){
+    $(".alert-dismissible").fadeIn().delay(5000).fadeOut();
+});
+
   // Initi AOS
   AOS.init({
     duration: 1000,
