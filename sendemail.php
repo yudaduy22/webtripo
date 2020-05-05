@@ -1,21 +1,26 @@
 <?php
-	ini_set( 'display_errors', 1 );
-	error_reporting( E_ALL );
+include "classes/class.phpmailer.php";
 
-	$from = "hello@tripo3000.com";
-	$to = "hello@tripo3000.com";
-	
-	$subject = "Contact me: " . $_POST['nama'];
+$nama = $_POST['nama'];
 
 	$message = "
-	Nama  : " .$_POST['nama']. "
-	Email : " .$_POST['email']. "
-	Message: " .$_POST['message'];
+	Name  : " .$_POST['nama']. "
+	<br>Email : " .$_POST['email']. "
+	<br>Message: " .$_POST['message'];
 
-	$headers = "From:" . $from;
-
-
-	mail($to,$subject,$message);
-
-	echo "OK";
+$mail = new PHPMailer;
+$mail->IsSMTP();
+$mail->SMTPSecure = 'tls';
+$mail->Host = "tripo3000.com"; //hostname masing-masing provider email
+$mail->SMTPDebug = 2;
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->Username = "hello@tripo3000.com"; //user email
+$mail->Password = "tripo3000"; //password email
+$mail->SetFrom("hello@tripo3000.com"); //set email pengirim
+$mail->Subject = $nama; //subyek email
+$mail->AddAddress("yuda@terralogiq.com"); //tujuan email
+$mail->MsgHTML($message);
+if($mail->Send()) echo "Your message has been sent. Thank you!";
+else echo "Failed to sending message";
 ?>
