@@ -873,3 +873,17 @@ section {
 .php-email-form label{
   font-weight: 500;
 }
+
+@media (max-width: 992px){
+  .grid-container{
+    grid-template-areas:
+    'right'
+    'footer';
+  }
+  .item3{
+    grid-area: right;
+  }
+  #foj-image{
+    width: 100%;
+  }
+}
