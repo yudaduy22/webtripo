@@ -15,7 +15,7 @@ $mail->Host = "tripo3000.com"; //hostname masing-masing provider email
 $mail->SMTPDebug = 0;
 $mail->Port = 587;
 $mail->SMTPAuth = true;
-$mail->Username = "hello@tripo3000.com"; //user email
+$mail->Username = "info@tripo3000.com"; //user email
 $mail->Password = "tripo3000"; //password email
 $mail->SetFrom("info@tripo3000.com"); //set email pengirim
 $mail->Subject = $nama; //subyek email
