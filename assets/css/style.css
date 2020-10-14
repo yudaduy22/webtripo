@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 1);
   padding: 10px 15px 10px 20px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   font-family: "MonumentExtended", sans-serif;
 }
@@ -689,22 +689,11 @@ section {
   top: 0;
 }
 
-#judul-atas{
-  font-family: "MontserratSemiBold", sans-serif;
-  font-size: 25px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: left !important;
-  line-height: 25px;
-  z-index: 99;
-}
-
 #judul-bawah{
   font-family: "MontserratExtraBold", sans-serif;
   font-size: 35px;
   letter-spacing: 1px;
   text-align: left !important;
-  text-transform: uppercase;
   line-height: 40px;
   z-index: 100;
 }
@@ -716,6 +705,7 @@ section {
 #isi{
   font-family: "MontserratLight", sans-serif;
   font-size: 15px;
+  margin-top: 10px;
   z-index: 101;
 }
 
@@ -789,7 +779,7 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 11%;
+    right: 5%;
     width: 1%;
     z-index: 1;
     display: -ms-flexbox;
@@ -808,7 +798,7 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 11%;
+    left: 5%;
     width: 1%;
     z-index: 1;
     display: -ms-flexbox;
@@ -827,11 +817,47 @@ section {
   position: relative;
   width: 100%;
   display: block;
+  align-items: center;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#gambar-kanan{
+  position: relative;
+  width: 100%;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  margin-bottom: 30px;
+  margin-top: 4px;
+}
+
+#gambar-kiri{
+  position: relative;
+  width: 100%;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  margin-bottom: 30px;
+  margin-top: 4px;
+}
+
+#gambar-kiri-zoom{
+  position: relative;
+  width: 88%;
+  display: block;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: 4px;
 }
+
+
 .carousel-item {
     position: relative;
     display: none;
