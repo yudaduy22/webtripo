@@ -674,7 +674,7 @@ section {
   src: url("../font/Montserrat-SemiBold.otf");
 }
 
-@font-face {
+@font-face { 
   font-family: MontserratExtraBold;
   src: url("../font/Montserrat-ExtraBold.otf");
 }
@@ -683,6 +683,7 @@ section {
   width: 100%;
   background: url("../img/blog.jpg");
   background-size: cover;
+  background-position: center;
   position: relative;
   left: 0;
   top: 0;
@@ -694,6 +695,8 @@ section {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left !important;
+  line-height: 25px;
+  z-index: 99;
 }
 
 #judul-bawah{
@@ -702,12 +705,18 @@ section {
   letter-spacing: 1px;
   text-align: left !important;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 40px;
+  z-index: 100;
+}
+
+.col-md-6{
+  overflow-x: hidden;
 }
 
 #isi{
   font-family: "MontserratLight", sans-serif;
   font-size: 15px;
+  z-index: 101;
 }
 
 .berita{
@@ -780,7 +789,7 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 13%;
+    right: 11%;
     width: 1%;
     z-index: 1;
     display: -ms-flexbox;
@@ -799,7 +808,7 @@ section {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 13%;
+    left: 11%;
     width: 1%;
     z-index: 1;
     display: -ms-flexbox;
@@ -816,12 +825,12 @@ section {
 
 #gambar{
   position: relative;
-  width: 80%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .carousel-item {
     position: relative;
