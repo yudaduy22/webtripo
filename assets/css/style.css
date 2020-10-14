@@ -707,6 +707,7 @@ section {
   font-size: 15px;
   margin-top: 10px;
   z-index: 101;
+  /*letter-spacing: 1px;*/
 }
 
 .berita{
