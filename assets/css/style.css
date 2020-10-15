@@ -812,7 +812,7 @@ section {
     opacity: 10.5; 
     transition: opacity .15s ease;
     height: 100%
-}
+} 
 
 #gambar{
   position: relative;
@@ -833,7 +833,7 @@ section {
   margin-left: auto;
   /*margin-right: auto;*/
   margin-bottom: 30px;
-  margin-top: 4px;
+  margin-top: 28px;
 }
 
 #gambar-kiri{
@@ -855,7 +855,8 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  margin-top: 4px;
+  margin-top: 18px;
+  height: 87%;
 }
 
 
